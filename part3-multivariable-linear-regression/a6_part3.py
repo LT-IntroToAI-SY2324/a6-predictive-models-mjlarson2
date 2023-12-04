@@ -9,12 +9,14 @@ x = data[["miles","age"]].values
 y = data["Price"].values
 
 #split the data into training and testing data
-
+xtrain, xtest, ytrain, ytest = train_test_split(x, y, test_size = .2)
 #create linear regression model
-
+model = LinearRegression.fit(xtrain, ytrain)
 #Find and print the coefficients, intercept, and r squared values. 
 #Each should be rounded to two decimal places. 
-
+print(np.around(model.coef_, 2))
+print(round(float(model.intercept), 2))
+print(round(model.score(x, y), 2))
 
 #Loop through the data and print out the predicted prices and the 
 #actual prices
