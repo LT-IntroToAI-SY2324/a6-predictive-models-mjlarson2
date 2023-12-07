@@ -1,12 +1,11 @@
 import pandas as pd
 import numpy as np
-import pandas as pd
-from sklearn import linear_model
+from sklearn.linear_model import LogisticRegression as LR
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
 #accesses the data, sets the species to numerical values, and creates x and y variables
-#Irirs-setosa = 0
+#Iris-setosa = 0
 #Iris-virginica = 1
 #iris-versicolor = 2
 data = pd.read_csv("part4-classification/iris_data.csv")
@@ -22,7 +21,7 @@ x = scaler.transform(x)
 x_train, x_test, y_train, y_test = train_test_split(x, y)
 
 #Creates the logisitic regression model
-model = linear_model.LogisticRegression().fit(x_train, y_train)
+model = LR().fit(x_train, y_train)
 
 #Prints the accuracy and predictions of the model
 print("Accuracy:", model.score(x_test, y_test))
