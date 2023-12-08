@@ -11,7 +11,7 @@ on completely different scales from each other, throwing off the model as it can
 The model is very accurate, with an r value of 0.89. This is accurate enough for the given use case of predicting purchases, given
 that it's just generally accurate.
 3. Looking at the predicted and actual results, how did the model do? Was there a pattern to the inputs that the model was incorrect about?
-The model genreally did well, and I can't identify a pattern to the inputs the model was incorrect about.
+The model generally did well, and I can't identify a pattern to the inputs the model was incorrect about.
 4. Would a 34 year old Female who makes 56000 a year buy an SUV according to the model? Remember to scale the data before running it through the model.
-No.
+Yes.
 

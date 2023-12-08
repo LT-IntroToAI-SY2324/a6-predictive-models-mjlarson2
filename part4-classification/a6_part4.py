@@ -35,6 +35,6 @@ for i in range(0, len(xtest)):
     y = ytest[i]
     print(x)
     print(f'Predicted : {ref[p]}; Actual: {ref[y]}')
-print(model.predict(np.asarray([34, 56000, 1]).reshape(1, -1)))
+print(model.predict(scaler.transform(np.asarray([34, 56000, 1]).reshape(1, -1))))
     
     
