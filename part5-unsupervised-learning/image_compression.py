@@ -19,7 +19,7 @@ print(img_size)
 X = img.reshape(img_size[0] * img_size[1], img_size[2])
 
 # Run the Kmeans algorithm
-km = KMeans(n_clusters=24, n_init = 10)
+km = KMeans(n_clusters=3, n_init = 10)
 km.fit(X)
 
 # Use the centroids to compress the image
